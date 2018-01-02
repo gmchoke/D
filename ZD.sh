@@ -28,7 +28,7 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 service ssh restart
 
 # set repo
-wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/gmchoke/A/master/sources.list.debian7"
+wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/gmchoke/D/master/sources.list.debian8"
 wget "https://raw.githubusercontent.com/gmchoke/D/master/dotdeb.gpg"
 wget "https://raw.githubusercontent.com/gmchoke/D/master/jcameron-key.asc"
 cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
